@@ -1,8 +1,8 @@
-let strN = "Carlos";
-let intI= 32;
+let nomeUsuario = "Carlos";
+let idadeUsuario= 32;
 
-function info(strN, intI) {
-    console.log(strN + " tem " + intI + " anos.");
+function getInfoUser(nomeUsuario, idadeUsuario) {
+    console.log(nomeUsuario + " tem " + idadeUsuario + " anos.");
 }
 
-info(strN, intI);
+getInfoUser(nomeUsuario, idadeUsuario);

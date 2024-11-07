@@ -1,13 +1,13 @@
-function h(a) {
-    let b = [];
-    for (let i = 0; i < a.length; i++) {
-        if (a[i] % 2 === 0) {
-            b.push(a[i]);
+function pegarNumerosParesDeVetor(vetorParametro) {
+    let vetor = [];
+    for (let indice = 0; indice < vetorParametro.length; indice++) {
+        if (vetorParametro[indice] % 2 === 0) {
+            vetor.push(vetorParametro[indice]);
         }
     }
-    return b;
+    return vetor;
 }
 
-let x = [1, 2, 3, 4, 5, 6];
-let y = h(x);
-console.log(y);
+let vetorExemplo = [1, 2, 3, 4, 5, 6];
+let vetorNumerosPares = pegarNumerosParesDeVetor(vetorExemplo);
+console.log(vetorNumerosPares);

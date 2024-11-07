@@ -1,13 +1,13 @@
-let nU = "Pedro";
-let iA = 25;
-let iU = true;
+let nomeUsuario = "Pedro";
+let idadeUsuario = 25;
+let usuarioAtivo = true;
 
-function dU(nU, iA, iU) {
-    if (iU) {
-        console.log(nU + " tem " + iA + " anos e está ativo.");
+function verificarUsuarioAtivo(nomeUsuario, idadeUsuario, usuarioAtivo) {
+    if (usuarioAtivo) {
+        console.log(nomeUsuario + " tem " + idadeUsuario + " anos e está ativo.");
     } else {
-        console.log(nU + " está inativo.");
+        console.log(nomeUsuario + " está inativo.");
     }
 }
 
-dU(nU, iA, iU);
+verificarUsuarioAtivo(nomeUsuario, idadeUsuario, usuarioAtivo);

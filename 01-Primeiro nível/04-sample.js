@@ -1,6 +1,6 @@
-let fcr = function(a, b) {
+let somar = (a, b) => {
     return a + b;
 }
 
-let rsl = fcr(3, 5);
-console.log(rsl);
+let resolucao = somar(3, 5);
+console.log(resolucao);

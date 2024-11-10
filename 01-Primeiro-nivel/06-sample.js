@@ -1,6 +1,6 @@
-let nomeUsuario = "Pedro";
-let idadeUsuario = 25;
-let usuarioAtivo = true;
+const nomeUsuario = "Pedro";
+const idadeUsuario = 25;
+const usuarioAtivo = true;
 
 function verificarUsuarioAtivo(nomeUsuario, idadeUsuario, usuarioAtivo) {
     if (usuarioAtivo) {

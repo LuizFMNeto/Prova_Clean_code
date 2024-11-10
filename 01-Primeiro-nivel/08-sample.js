@@ -1,4 +1,4 @@
-let pessoa = { nome: "Maria", idade: 28 };
+const pessoa = { nome: "Maria", idade: 28 };
 const maiorIdade = 18;
 
 function verificarMaiorDeIdade(pessoa) {

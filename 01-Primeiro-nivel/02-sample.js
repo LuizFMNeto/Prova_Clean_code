@@ -1,4 +1,4 @@
-let acesso = true;
+const acesso = true;
 
 function verificarAdmin(usuario) {
     if (acesso && usuario.isAdmin) {
@@ -8,5 +8,5 @@ function verificarAdmin(usuario) {
     }
 }
 
-let usuario = { nome: "João", admin: true };
+const usuario = { nome: "João", admin: true };
 verificarAdmin(usuario);

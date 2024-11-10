@@ -1,4 +1,4 @@
-let usuario = {
+const usuario = {
     nome: "João",
     idade: 25
 };

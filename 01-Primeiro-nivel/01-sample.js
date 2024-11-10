@@ -1,5 +1,5 @@
 function pegarNumerosParesDeVetor(vetorParametro) {
-    let vetor = [];
+    const vetor = [];
     for (let indice = 0; indice < vetorParametro.length; indice++) {
         if (vetorParametro[indice] % 2 === 0) {
             vetor.push(vetorParametro[indice]);
@@ -8,6 +8,6 @@ function pegarNumerosParesDeVetor(vetorParametro) {
     return vetor;
 }
 
-let vetorExemplo = [1, 2, 3, 4, 5, 6];
-let vetorNumerosPares = pegarNumerosParesDeVetor(vetorExemplo);
+const vetorExemplo = [1, 2, 3, 4, 5, 6];
+const vetorNumerosPares = pegarNumerosParesDeVetor(vetorExemplo);
 console.log(vetorNumerosPares);

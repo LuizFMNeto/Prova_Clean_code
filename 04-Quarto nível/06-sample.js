@@ -1,8 +1,16 @@
-async function buscarNave(id) {
-    const resposta = await fetch(`https://swapi.dev/api/starships/${id}/`);
-    const nave = await resposta.json();
-
-    console.log(nomeNave);
+async function buscarNave(idNave) {
+    try {
+    const respostaNave = await fetch(`https://swapi.dev/api/starships/${idNave}/`);
+    if (!respostaNave.ok) {
+        throw new Error(`Erro na requisição: ${respostaNave.status}`);
+    }
+    const dadosNave = await respostaNave.json();
+    console.log(dadosNave)
+    } catch (erro) {
+        console.error(`Erro ao buscar dados da nave ${idNave}:`, erro);
+    }
 }
 
-buscarNave(10);
+
+const buscarIDNave = 2;
+buscarNave(buscarIDNave);

@@ -1,8 +1,16 @@
-async function buscarFilme() {
-    const resposta = await fetch("https://swapi.dev/api/films/1/");
-    const filme = await resposta.json();
+async function buscarFilme(idFilme) {
+    try {
+    const respostaFilme = await fetch(`https://swapi.dev/api/films/${idFilme}/`);
+    if (!respostaFilme.ok) {
+        throw new Error(`Erro na requisicao: ${respostaFilme.status}`)
+    }
+    const dadosFilme = await respostaFilme.json();
+    console.log(dadosFilme);
+    } catch (erro) {
+        console.error(`Erro ao buscar filme: ${idFilme}`, erro)
+    }
 
-    console.log(filme.titulo.toUpperCase());
 }
 
-buscarFilme();
+const buscarIdFilme = 1;
+buscarFilme(buscarIdFilme);

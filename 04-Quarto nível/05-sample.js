@@ -1,8 +1,15 @@
-async function buscarPersonagem() {
-    const id = 1000000000000;
-    const resposta = await fetch(`https://swapi.dev/api/people/${id}/`);
-    const personagem = await resposta.json();
-    console.log(personagem.name);
+async function buscarPersonagem(idPersonagem) {
+    try {
+    const respostaPersonagem = await fetch(`https://swapi.dev/api/people/${idPersonagem}/`);
+    if (!respostaPersonagem.ok) {
+        throw new Error(`Erro na requisicao ${respostaPersonagem.status}`)
+    }
+    const dadosPersonagem = await respostaPersonagem.json();
+    console.log(dadosPersonagem);
+    } catch (erro) {
+        console.error(`Erro ao buscar o personagem ${idPersonagem}`, erro)
+    }
 }
 
-buscarPersonagem();
+const buscarIdPersonagem = 1;
+buscarPersonagem(buscarIdPersonagem);

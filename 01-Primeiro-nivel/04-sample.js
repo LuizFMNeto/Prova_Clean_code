@@ -1,6 +1,8 @@
-const somar = (a, b) => {
+function somar(a, b) {
     return a + b;
-};
+}
 
-const resolucao = somar(3, 5);
+const numero1 = 3;
+const numero2 = 5;
+const resolucao = somar(numero1, numero2);
 console.log(resolucao);

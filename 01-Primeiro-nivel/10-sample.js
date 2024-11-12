@@ -4,7 +4,7 @@ const usuario = {
 };
 
 function getInfoUser(usuarioParametro) {
-    console.log(usuarioParametro.nome + " tem " + usuarioParametro.idade + " anos.");
+    console.log(`${usuarioParametro.nome} tem ${usuarioParametro.idade} anos.`);
 }
 
 getInfoUser(usuario);

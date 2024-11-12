@@ -7,4 +7,5 @@ function verificarSePodeDirigir(idade) {
     }
 }
 
-console.log(verificarSePodeDirigir(16));
+const idadeDoUsuario = 16;
+console.log(verificarSePodeDirigir(idadeDoUsuario));

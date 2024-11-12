@@ -5,4 +5,7 @@ class Gestor {
     }
 }
 
-const pessoa = new Gestor("Lucas", 40);
+const idadeUsuario = 40;
+const pessoa = new Gestor("Lucas", idadeUsuario);
+
+console.log(pessoa);

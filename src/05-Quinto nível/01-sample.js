@@ -9,7 +9,7 @@ const azeite = 40;
 const whisky = 50;
 const maiorIdade = 18;
 function principal() {
-    const qntItens = [milho, cafe, cerveja, azeite, whisky];
+    const qntItens = [milho, cafe, cerveja, azeite, whisky]; 
     let total = 0;
     
     
